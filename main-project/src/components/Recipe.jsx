@@ -1,5 +1,5 @@
 import RecipeCard from "./RecipeCard";
-
+import Sidebar from "./Sidebar";
 const Recipe = () => {
 	return (
 		<div>
@@ -10,7 +10,9 @@ const Recipe = () => {
 					<RecipeCard />
 				</div>
 
-				<aside></aside>
+				<aside>
+					<Sidebar />
+				</aside>
 			</section>
 		</div>
 	);

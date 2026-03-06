@@ -13,8 +13,17 @@ function RecipeCard({ recipe }) {
 					Delicious recipe that you can cook easily at home.
 				</p>
 
-				<div className="text-xs text-gray-400 mt-3">
-					By Chef • {recipe.cuisine}
+				<div className="text-xs text-gray-400 mt-3 flex justify-start items-center gap-2">
+					<img
+						src={recipe.image}
+						className="w-10 h-10 object-cover rounded-full"
+					/>
+					<h4>By Chef </h4>{" "}
+					<p>
+						• {new Date().toLocaleString("en-US", { weekday: "long" })},{" "}
+						{new Date().toLocaleString("en-US", { month: "long" })}{" "}
+						{new Date().getDate()}, {new Date().getFullYear()}
+					</p>
 				</div>
 			</div>
 		</div>

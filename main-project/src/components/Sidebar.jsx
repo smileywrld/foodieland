@@ -18,8 +18,9 @@ function Sidebar({ recipes }) {
 				</div>
 			))}
 
-			<div className="bg-green-700 text-white p-6 rounded-2xl text-center mt-8">
-				<h4 className="font-semibold">Don't forget to eat healthy food</h4>
+			<div className="bg-green-700 text-white p-6 rounded-2xl text-center mt-8 h-56">
+                <h4 className="font-semibold">Don't forget to eat healthy food</h4>
+                
 			</div>
 		</aside>
 	);

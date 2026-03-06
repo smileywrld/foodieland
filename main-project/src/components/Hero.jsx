@@ -1,28 +1,30 @@
-const Hero = () => {
+function Hero({ search, setSearch }) {
 	return (
-		<div className="w-full flex items-center justify-center h-[65vh]">
-			<div className="container px-5 py-4 flex flex-col gap-9 items-center justify-center">
-				<h2 className="text-5xl text-center  font-bold">Blog & Article</h2>
-				<p className="text-center text-2xl">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-					velit, deserunt, tenetur quas at voluptatibus nisi aperiam sunt
-					facere beatae ullam alias praesentium vero vel, repellat impedit
-					animi quo earum.
-				</p>
+		<section className="text-center py-12 flex flex-col justify-center items-center">
+			<h1 className="text-6xl font-bold">Blog & Article</h1>
 
-				<div className="border pl-5  rounded-2xl border-gray-400">
-					<input
-						type="text"
-						placeholder="search article, news or recipe"
-						className="w-80"
-					/>
-					<button className="cursor-pointer bg-black text-white border p-5 rounded-2xl w-40 m-2">
-						Search
-					</button>
-				</div>
+			<p className="text-gray-500 mt-3">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+				minima quae expedita aliquam. Fuga odio adipisci dolorem eum,
+				tenetur consequatur molestias voluptatem nihil, neque placeat
+				recusandae modi, libero esse atque!
+			</p>
+
+			<div className="flex justify-center mt-6 gap-3 border rounded w-fit pr-1 py-1">
+				<input
+					type="text"
+					placeholder="Search recipe..."
+					value={search}
+					onChange={(e) => setSearch(e.target.value)}
+					className="px-4 py-2 rounded-md"
+				/>
+
+				<button className="bg-black text-white px-6 py-2 rounded">
+					Search
+				</button>
 			</div>
-		</div>
+		</section>
 	);
-};
+}
 
 export default Hero;

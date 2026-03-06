@@ -20,7 +20,7 @@ function RecipeCard({ recipe }) {
 					/>
 					<h4>By Chef </h4>{" "}
 					<p>
-						• {new Date().toLocaleString("en-US", { weekday: "long" })},{" "}
+						{new Date().toLocaleString("en-US", { weekday: "long" })},{" "}
 						{new Date().toLocaleString("en-US", { month: "long" })}{" "}
 						{new Date().getDate()}, {new Date().getFullYear()}
 					</p>

@@ -1,6 +1,6 @@
 function Hero({ search, setSearch }) {
 	return (
-		<section className="text-center py-12 flex flex-col justify-center items-center">
+		<section className="text-center p-12 flex flex-col justify-center items-center h-[65vh] ">
 			<h1 className="text-6xl font-bold">Blog & Article</h1>
 
 			<p className="text-gray-500 mt-3">
@@ -16,10 +16,10 @@ function Hero({ search, setSearch }) {
 					placeholder="Search recipe..."
 					value={search}
 					onChange={(e) => setSearch(e.target.value)}
-					className="px-4 py-2 rounded-md"
+					className="px-4 py-2 rounded-md w-70"
 				/>
 
-				<button className="bg-black text-white px-6 py-2 rounded">
+				<button className="bg-black text-white px-6 py-2 rounded cursor-pointer text-1xl">
 					Search
 				</button>
 			</div>

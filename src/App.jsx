@@ -14,7 +14,7 @@ function App() {
 		<>
 			<Navbar />
 			<Hero search={search} setSearch={setSearch} />
-			
+			<Recipe search={search} />
 			<Newsletter />
 			<Footer />
 		</>

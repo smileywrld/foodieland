@@ -1,6 +1,6 @@
 const Navbar = () => {
 	return (
-		<nav className="bg-white shadow shadow-gray-300 w-full px-8 md:px-auto sticky">
+		<nav className="bg-white shadow shadow-gray-300 w-full px-8 md:px-auto sticky top-0">
 			<div className="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
 				<div className="md:order-1">
 					<h1 className="text-2xl font-bold italic">FoodieLand</h1>
